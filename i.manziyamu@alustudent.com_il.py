@@ -31,7 +31,7 @@ class Student:
             return "Pass: You have progressed."
         elif not passed_formative and not passed_summative:
             return "Fail: Retake the course."
-        elif not passed_formative:
+        elif not passed_formative and passed_summative:
             return "Fail: Low score in formative assignments. Retake needed."
         else:
             return "Fail: Low score in summative assignments. Retake needed."
