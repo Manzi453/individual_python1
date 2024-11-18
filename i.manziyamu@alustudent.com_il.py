@@ -59,7 +59,7 @@ class Student:
 
 
 # Sample usage of the application
-if _name_ == "_main_":
+if __name__ == "_main_":
     # Collect assignments data from user or define them here for testing
     assignments = [
         Assignment("Assignment 1", "FA", 45, 15),
