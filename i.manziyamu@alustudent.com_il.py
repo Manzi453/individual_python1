@@ -5,7 +5,6 @@ class Assignment:
         self.type = type
         self.score = score
         self.weight = weight
-
     def weighted_score(self):
         return (self.score * self.weight) / 100
 
@@ -31,7 +30,7 @@ class Student:
             return "Pass: You have progressed."
         elif not passed_formative and not passed_summative:
             return "Fail: Retake the course."
-        elif not passed_formative and passed_summative:
+        elif not passed_formative :
             return "Fail: Low score in formative assignments. Retake needed."
         else:
             return "Fail: Low score in summative assignments. Retake needed."
@@ -60,7 +59,7 @@ class Student:
 
 
 # Sample usage of the application
-if name == "_main_":
+if _name_ == "_main_":
     # Collect assignments data from user or define them here for testing
     assignments = [
         Assignment("Assignment 1", "FA", 45, 15),
